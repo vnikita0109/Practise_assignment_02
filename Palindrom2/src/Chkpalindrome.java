@@ -10,13 +10,13 @@ public class Chkpalindrome {
         String y = "";
 
 
-        palindrome(x, y);
+        palindrome(x, y);                                       //to display the output
     }
 
     public static void palindrome(String x, String y) {
         chkrev(x, y);
 
-        if (x.equals(y)) {
+        if (x.equals(y)) {                                      //comparing input with intermediate
             System.out.println("Given input is palindrome");
         } else {
             System.out.println("Given input is not palindrome");
@@ -27,10 +27,10 @@ public class Chkpalindrome {
 
     public static String chkrev(String x, String y) {
         for (int i = x.length() - 1; i >= 0; i--) {
-            y = x.charAt(i) + y;
+            y = x.charAt(i) + y;                                  //to reverse the input
 
         }
-        return y;
+        return y;                                                //returning reversed intermediate
     }
 
 }

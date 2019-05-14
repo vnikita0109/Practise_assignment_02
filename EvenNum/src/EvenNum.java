@@ -5,9 +5,9 @@ public class EvenNum {
     public static boolean isEven(int number)
     {
         if(number % 2 == 0)
-          return true;
+          return true;                                  // when number is even
         else
-            return false;
+            return false;                               // when number is not even
 
 
     }
@@ -21,7 +21,7 @@ public class EvenNum {
         int num = reader.nextInt();
 
         boolean str=isEven(num);
-        System.out.println(str);
+        System.out.println(str);                        //displaying output as boolean
 
     }
 

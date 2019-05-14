@@ -24,14 +24,14 @@ public class StudentAvg{
             System.out.print("Enter the grade for student "+(i+1)+":");
 
             int temp=sc.nextInt();
-            if( (temp >= 0) && (temp<=100)) {//applying boundaries to input
+            if( (temp >= 0) && (temp<=100)) {                           //applying boundaries to input of grades
                 stud[i]=temp;
             }
             else {
                 System.out.println("Enter valid value between 0-100");
                 break;
             }
-            i++;
+            i++;                                                         // incrementing to next student
         }
     }
     static String average()
@@ -42,18 +42,18 @@ public class StudentAvg{
 
             sum=sum+stud[i];
         }
-        System.out.println("The average is:"+sum/number);//print the average
+        System.out.println("The average is:"+sum/number);                //print the average of grades
         return "";
     }
     static String minimum()
     {
-        Arrays.sort(stud);//to find minimum grades
+        Arrays.sort(stud);                                                 //to find minimum grades
         System.out.println("The minimum is:"+stud[0]);
         return "";
     }
     static String maximum()
     {
-        Arrays.sort(stud);// to find maximum grades
+        Arrays.sort(stud);                                                  // to find maximum grades
         System.out.println("The maximum is:"+stud[stud.length-1]);
         return "";
     }
